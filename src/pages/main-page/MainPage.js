@@ -2,7 +2,7 @@ const MainPage = () => {
   return (
     <section
       id="home"
-      className="relative overflow-hidden h-screen max-w-screen-xl flex  mx-auto p-4"
+      className="relative overflow-hidden h-[600px] max-w-screen-xl flex  mx-auto p-4"
     >
       <div className=" w-2/4 flex items-center h-full">
         <div className="space-y-5">
