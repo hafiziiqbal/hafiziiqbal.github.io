@@ -1,12 +1,9 @@
 "use client";
-import { useEffect } from "react";
 import "@lottiefiles/lottie-player";
 import { FaRegEnvelope, FaRegEnvelopeOpen } from "react-icons/fa";
-
 import Marquee from "react-fast-marquee";
 
 const OpeningSliderPage = () => {
-  useEffect(() => {}, []);
   return (
     <section
       id="openingSlider"
