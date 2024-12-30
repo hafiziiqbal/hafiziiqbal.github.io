@@ -1,15 +1,20 @@
 "use client";
-import "@lottiefiles/lottie-player";
 import { FaRegEnvelope, FaRegEnvelopeOpen } from "react-icons/fa";
 import Marquee from "react-fast-marquee";
+import { useEffect } from "react";
 
 const OpeningSliderPage = () => {
+  useEffect(() => {
+    if (!window?.customElements.get(`lottie-player`)) {
+      import(`@lottiefiles/lottie-player`);
+    }
+  }, []);
   return (
     <section
       id="openingSlider"
-      className="relative h-40 flex items-center w-full overflow-hidden whitespace-nowrap"
+      className="relative h-40 flex items-center w-full overflow-hidden "
     >
-      <Marquee pauseOnHover>
+      <Marquee pauseOnHover={true}>
         <div className="relative flex items-center justify-center">
           <button className="absolute z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full bg-gray-400 text-white flex items-center justify-center overflow-hidden group">
             {/* Icon Default */}
